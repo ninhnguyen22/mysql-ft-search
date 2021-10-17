@@ -1,6 +1,6 @@
 <?php
 
-namespace Nin\MysqlFtSearch\Tests;
+namespace Nin\MysqlFtSearch\Tests\Unit;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Nin\MySqlFtSearch\ServiceProvider;

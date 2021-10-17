@@ -1,17 +1,11 @@
 <?php
 
-namespace Nin\MysqlFtSearch\Tests;
+namespace Nin\MysqlFtSearch\Tests\Unit;
 
-use Mockery as m;
 use Nin\MySqlFtSearch\SearchBuilder;
 
 class SearchBuilderTest extends TestCase
 {
-    protected function tearDown(): void
-    {
-        m::close();
-    }
-
     public function testFullTextWildcards()
     {
         $config = $this->app['config'];

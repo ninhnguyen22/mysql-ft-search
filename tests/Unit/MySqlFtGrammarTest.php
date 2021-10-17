@@ -1,6 +1,6 @@
 <?php
 
-namespace Nin\MysqlFtSearch\Tests;
+namespace Nin\MysqlFtSearch\Tests\Unit;
 
 use Mockery as m;
 use Nin\MySqlFtSearch\MySqlFtBlueprint;
