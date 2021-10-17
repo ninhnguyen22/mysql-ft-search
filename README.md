@@ -34,6 +34,32 @@ To be able to search with 2 characters, configure Minimum Word Length:
 First, You need install [Laravel Scout](https://laravel.com/docs/8.x/scout) package.
 
 
+### Install:
+
+Composer:
+```bash
+
+$ composer require nin/mysql-ft-search
+
+```
+
+If you don't use auto-discovery, add the ServiceProvider to the providers array in config/app.php
+```php
+Nin\MySqlFtSearc\ServiceProvider::class,
+
+```
+
+Publish config:
+```bash
+$ php artisan vendor:publish --provider="Nin\MySqlFtSearc\ServiceProvider"
+
+```
+
+Laravel scout driver configuration:
+```
+SCOUT_DRIVER=mysql  # Refer to config('mysql-ft-search.scout_driver_name')
+```
+
 
 ### Schema:
 
